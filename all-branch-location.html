@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- For tailwind installation -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- For DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    
+      <!-- For font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Font lato -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+        <!-- font bangla -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+        <style>
+            .font-lato{
+                font-family: 'Lato', sans-serif;
+            }
+
+            .font-bangla{
+                font-family: 'Lato', sans-serif;
+                font-family: 'Noto Sans Bengali', sans-serif;
+            }
+        </style>
+</head>
+
+<body class="mx-auto w-full">
+
+    <!-- navbar -->
+    <section class="mx-3 lg:mx-14 my-2 lg:my-3">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="programs.html" class="hover:text-black">প্রোগ্রামসমূহ</a></li>
+                  <li><a href="all-branch-location.html" class="hover:text-black">শাখাসমূহ</a></li>
+                  <li><a href="#" class="hover:text-black">Phone- 0176265656654</a></li>
+                </ul>
+              </div>
+              <a href="index.html" class="w-2/3 lg:w-2/7"><img class="w-auto lg:w-auto btn" src="images/Udvash-Logo.png" alt=""></a>
+            </div>
+            <div class="navbar-end flex lg:flex-row gap-3 lg:text-lg text-gray-600 font-bold">
+              <a href="programs.html" class="hover:text-black hidden lg:flex">প্রোগ্রামসমূহ</a>
+              <a href="all-branch-location.html" class="hover:text-black hidden lg:flex">শাখাসমূহ</a>
+              <a href="#" class="hover:text-black hidden lg:flex"><img src="images/phone.png" alt=""></a>
+              <a href="login.html" class="btn bg-gradient-to-r from-orange-600 to-[#DF0C52] hover:from-[#fa6a9a]  hover:to-orange-400 text-white  lg:text-xl text-base font-bold rounded-full font-lato">Join Now</a>
+            </div>
+          </div>
+        </section>
+
+
+    <!-- main-body-section -->
+
+    <section class="bg-[#ff8a3b] ">
+        <div class="mx-auto container p-12">
+        <!-- for-row1 -->
+        
+                <!-- for-part1 -->
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <p class="text-white text-4xl font-bangla font-bold">দেশব্যাপী বিস্তৃত উদ্ভাসের ৭৮টি শাখা এবং ১০টি পরীক্ষাকেন্দ্র</p>
+                    <form action="" class="bg-transparent border-white border rounded-full text-white font-semibold flex items-center p-1">
+                        <input type="text" placeholder="Place name" class="bg-transparent outline-none placeholder-white placeholder:text-base placeholder:font-semibold px-2 py-1 rounded-l-full w-32">
+                        <button type="submit" class="px-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <button type="button" class="p-1 border border-1 border-white text-white rounded-md">Filter <i class="fa-solid fa-filter"></i></button>
+                </div>
+          
+                <!-- address-info -->
+                <div class="flex flex-col gap-5 py-7">
+                <!-- row-1 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <a href="location-with-map.html" class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">বকশিবাজার</p>
+                                <img src="images/mapicon.png" alt="">
+                            </a>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <a href="location-with-map.html" class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">বনশ্রী</p>
+                                <img src="images/mapicon.png" alt="">
+                            </a>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <a href="location-with-map.html" class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    বাসাবো</p>
+                                <img src="images/mapicon.png" alt="">
+                            </a>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-2 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    ক্যান্টনমেন্ট</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">দনিয়া</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">ফার্মগেট (গ্রীন রোড)</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-3 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    ফার্মগেট (মালেক টাওয়ার)</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    যাত্রাবাড়ী</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">খিলগাঁও</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-4 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    কোনাপাড়া</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    লক্ষ্মীবাজার</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">মালিবাগ</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-5 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    মিরপুর</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    মোহাম্মদপুর</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">মতিঝিল</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-6 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">রূপনগর</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">সাভার </p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">সাইন্স ল্যাব.</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-7 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">বকশিবাজার</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">বনশ্রী</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    বাসাবো</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-8 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    ক্যান্টনমেন্ট</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">দনিয়া</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">ফার্মগেট (গ্রীন রোড)</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-9 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    ফার্মগেট (মালেক টাওয়ার)</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    যাত্রাবাড়ী</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">খিলগাঁও</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-10 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    কোনাপাড়া</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    লক্ষ্মীবাজার</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">মালিবাগ</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-11 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    মিরপুর</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">
+                                    মোহাম্মদপুর</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">মতিঝিল</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- row-12 -->
+                    <div class="flex lg:flex-row flex-col gap-5">
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">রূপনগর</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">সাভার </p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-3xl flex flex-col gap-3">
+                            <div class=" flex flex-row items-center justify-between">
+                                <p class="font-bangla text-xl font-bold text-black">সাইন্স ল্যাব.</p>
+                                <img src="images/mapicon.png" alt="">
+                            </div>
+                            <div class=" flex flex-row items-center gap-10">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                                <div class="flex flex-row gap-2 items-center">
+                                    <i class="fa-solid fa-phone text-white  bg-green-600 p-2 rounded-full"></i>
+                                    <p class="font-lato text-lg text-black">01713236712</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+       
+        <!-- <select name="" id="">
+
+            <option value="">
+                    <select class="p-2 shadow bg-base-100 rounded-full w-full text-xl font-semibold outline-blue-300">
+                    <option>All Program</option>
+                    <option>Online Program</option>
+                    <option>Offline Program</option>
+                    </select>
+            </option>
+            <option value="">
+                    <select class="p-2 shadow bg-base-100 rounded-full w-full text-xl font-semibold outline-blue-300">
+                    <option>All Program</option>
+                    <option>Online Program</option>
+                    <option>Offline Program</option>
+                    </select>
+            </option>
+            <option value="">
+                    <select class="p-2 shadow bg-base-100 rounded-full w-full text-xl font-semibold outline-blue-300">
+                    <option>All Program</option>
+                    <option>Online Program</option>
+                    <option>Offline Program</option>
+                    </select>
+            </option>
+        </select> -->
+    </div>
+    </section>
+
+
+
+    <!-- footer -->
+
+    <footer class="bg-[#532356] px-24 pt-16 pb-6">
+        <div class="flex flex-col lg:flex-row w-full justify-between py-6">
+            <div class="">
+                <img src="images/Udvash-Logo.png" alt="" class="w-full">
+            </div>
+            <div class="text-white text-sm font-normal flex flex-col gap-2">
+                    <h6 class="font-bangla text-2xl font-semibold">Help</h6> 
+                    <a class="link link-hover">About Us</a>
+                    <a class="link link-hover">Branch List</a>
+                    <a class="link link-hover">Privacy Policy</a>
+                    <a class="link link-hover">Terms & Conditions</a>
+            </div>
+            <div class="text-white text-sm font-normal flex flex-col gap-2">
+                    <h6 class="font-bangla text-2xl font-semibold">Explore</h6> 
+                    <a class="link link-hover">Programs</a>
+                    <a class="link link-hover">Teacher Registration</a>
+            </div>
+            <div class="text-white text-sm font-normal flex flex-col gap-3">
+                    <h6 class="font-bangla text-2xl font-semibold">Get In Touch</h6> 
+                    <a>Address: Malek Tower (5th Floor), Opposite to <br>Farmgate Police Box, Farmgate, Dhaka-1215.</a>
+                    <a>Helpline: 09666775566</a>
+                    <a>Email: info@udvash-unmesh.com</a>
+                    <div class="flex flex-row items-center gap-4">
+                          <a href=""><i class="fa-brands fa-facebook rounded-full text-3xl"></i></a>
+                          <a href=""><i class="fa-brands fa-youtube rounded-full text-3xl"></i></a>
+                          <a href=""><i class="fa-brands fa-instagram rounded-full text-3xl"></i></a>
+                          <a href=""><i class="fa-brands fa-linkedin-in rounded-full text-3xl"></i></a>
+                    </div>
+            </div>
+        </div>
+        <hr>
+        <div class="py-6">
+            <p class="text-sm font-normal text-white text-center">Copyright © Udvash Academic & Admission Care. All rights reserved. 2024</p>
+          </div>
+    </footer>
